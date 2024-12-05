@@ -1,0 +1,26 @@
+name: Advent of Code 2024 - Day 02
+parts:
+  - name: part1
+    command: uiua run part1.ua
+    cases:
+      - name: test
+        stdin:
+          file: test.txt
+        expected:
+          stdout: "2"
+      - name: input
+        stdin:
+          file: input.txt
+        expected:
+          stdout: "564"
+  - name: part2
+    command: uiua run part2.ua
+    cases:
+      - name: test
+        stdin:
+          file: test.txt
+        expected:
+          stdout: "4"
+      - name: input
+        stdin:
+          file: input.txt
