@@ -1,10 +1,8 @@
 ~ "input.ua"
 
-Diff           ← - ⊙(↙ -1 ⊸⧻) ↘1 .
-AllEqual       ← =/↥⟜/↧
+AllEqual       ← ≍ ⊸↻ 1
 IsMonotonic    ← AllEqual ±
-TakeMonotonic  ← ▽ ≡(/= ± Diff).
 IsSafePositive ← AllEqual ↧ (≤3)⟜(>0) ⌵
-IsSafe         ← ↧ IsSafePositive ⟜IsMonotonic Diff
+IsSafe         ← ↧ IsSafePositive ⟜IsMonotonic ⧈-
 
 °□ /+ ⍚(IsSafe)
