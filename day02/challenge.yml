@@ -1,7 +1,7 @@
 name: Advent of Code 2024 - Day 02
 parts:
   - name: part1
-    command: uiua run part1.ua
+    command: uiua run --no-color part1.ua
     cases:
       - name: test
         stdin:
@@ -14,7 +14,7 @@ parts:
         expected:
           stdout: "564"
   - name: part2
-    command: uiua run part2.ua
+    command: uiua run --no-color part2.ua
     cases:
       - name: test
         stdin:
@@ -24,3 +24,5 @@ parts:
       - name: input
         stdin:
           file: input.txt
+        expected:
+          stdout: "604"

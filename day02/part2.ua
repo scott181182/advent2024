@@ -1,8 +1,9 @@
 ~ "input.ua"
 
 AllEqual       ← ≍ ⊸↻ 1
+AllTrue        ← =0/+¬
 IsMonotonic    ← AllEqual ±
-IsSafePositive ← AllEqual ↧ (≤3)⟜(>0) ⌵
+IsSafePositive ← AllTrue ↧ (≤3)⟜(>0) ⌵
 IsSafe         ← ↧ IsSafePositive ⟜IsMonotonic ⧈-
 
 Perms     ← ≡(▽) ⊙¤ ¬⊞=.⇡ ⊸⧻
