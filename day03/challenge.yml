@@ -24,3 +24,5 @@ parts:
       - name: input
         stdin:
           file: input.txt
+        expected:
+          stdout: "111762583"
