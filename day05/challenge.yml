@@ -22,3 +22,5 @@ parts:
           stdout: "123"
       - name: input
         stdin: *final-input
+        expected:
+          stdout: "5502"

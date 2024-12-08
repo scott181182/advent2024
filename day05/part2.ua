@@ -11,11 +11,11 @@ IsUpdateValid   ← ¬/↥ ≡(HasIntersection ⊃(⬚[]get ⊙⋅∘|⋅⊙◌)
 ⟜≡(◇IsUpdateValid) ⊙¤
 ▽¬:
 
-SetSub                 ← ▽¬:⟜≡(/↥⌕)⊙¤
-TopDependants          ← SetSub :◴/(◇⊂): °map
-RemoveFromMap          ← ⊃(∘|∧(remove))
-TopologicalSortRuleMap ← ⇌ ◌ ⍢(⊃(⋅∘|⊂⊙⋅∘) RemoveFromMap ? ⊸TopDependants|>₀⊸⧻):[]
+GetDependents      ← ⍣(°□ get|[] ⋅◌)
+IsValidNextPage    ← =₀⧻ ▽⊸∈ ⊃(⋅∘|GetDependents ⊙⋅∘)
+NextValidPageMask  ← ≡(IsValidNextPage) ⟜∩¤
+FoldNextValidPages ← |3.3 ⊃(▽⊙⋅∘|⋅(⊂▽)) ⊸¬ ⊃(:⟜NextValidPageMask ⊙⋅∘|⋅⊙∘)
+ReorderPages       ← ⋅⊙◌ ⍢(FoldNextValidPages|≠₀⊸⧻):[]
 
-⊙TopologicalSortRuleMap
-⍚(⊏⍏:⟜⬚∞⊗)⊙¤
+⍚(ReorderPages) ⊙¤
 /◇+⍚(⊡⌊÷₂⊸⧻)
