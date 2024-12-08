@@ -27,6 +27,10 @@ parts:
     cases:
       - name: test
         stdin: *test-input
+        expected:
+          stdout: "9"
       - name: input
         stdin:
           file: input.txt
+        expected:
+          stdout: "1936"
