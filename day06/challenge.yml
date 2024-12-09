@@ -20,10 +20,14 @@ parts:
       - name: input
         stdin: &final-input
           file: input.txt
+        expected:
+          stdout: "4647"
   - name: part2
     command: uiua run --no-color part2.ua
     cases:
       - name: test
         stdin: *test-input
+        expected:
+          stdout: "6"
       - name: input
         stdin: *final-input
