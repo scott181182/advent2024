@@ -31,3 +31,5 @@ parts:
           stdout: "6"
       - name: input
         stdin: *final-input
+        expected:
+          stdout: "1723"
