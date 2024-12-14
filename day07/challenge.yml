@@ -18,5 +18,9 @@ parts:
     cases:
       - name: test
         stdin: *test-input
+        expected:
+          stdout: "11387"
       - name: input
         stdin: *final-input
+        expected:
+          stdout: "91377448644679"
