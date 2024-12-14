@@ -18,5 +18,14 @@ parts:
     cases:
       - name: test
         stdin: *test-input
+        expected:
+          stdout: "34"
+      - name: test2
+        stdin:
+          file: test2.txt
+        expected:
+          stdout: "9"
       - name: input
         stdin: *final-input
+        expected:
+          stdout: "1229"
