@@ -1,0 +1,24 @@
+name: Advent of Code 2024 - Day 09
+parts:
+  - name: part1
+    command: uiua run --no-color part1.ua
+    cases:
+      - name: test
+        stdin: &test-input
+          file: test.txt
+        expected:
+          stdout: "1928"
+      - name: input
+        stdin: &final-input
+          file: input.txt
+        expected:
+          stdout: "6332189866718"
+  - name: part2
+    command: uiua run --no-color part2.ua
+    cases:
+      - name: test
+        stdin: *test-input
+        expected:
+          stdout: "2858"
+      - name: input
+        stdin: *final-input
