@@ -31,6 +31,8 @@ parts:
       - name: input
         stdin: &final-input
           file: input.txt
+        expected:
+          stdout: "459"
   - name: part2
     command: uiua run --no-color part2.ua
     cases:

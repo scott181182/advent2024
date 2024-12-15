@@ -13,4 +13,4 @@ StartingPoints
 # Find all paths to summits
 ≡(□⊙◌ path(≡⋅1. ⊙◌ Neighbors|=₉⊡)) ⊙¤
 # Find number of summits reached
-⧻◴≡(◇(◇⊣))
+/+≡(⧻◴◇≡(◇⊣))
