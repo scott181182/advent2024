@@ -1,0 +1,2 @@
+# Read Input
+⋕ ⊜□ ⊸≠@  &sc
