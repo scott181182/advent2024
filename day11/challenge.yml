@@ -18,5 +18,9 @@ parts:
     cases:
       - name: test
         stdin: *test-input
+        expected:
+          stdout: "65601038650482"
       - name: input
         stdin: *final-input
+        expected:
+          stdout: "241651071960597"
