@@ -4,12 +4,12 @@ parts:
     command: uiua run --no-color part1.ua
     cases:
       - name: test1
-        stdin:
+        stdin: &test1-input
           file: test1.txt
         expected:
           stdout: "140"
       - name: test2
-        stdin:
+        stdin: &test2-input
           file: test2.txt
         expected:
           stdout: "772"
@@ -21,10 +21,32 @@ parts:
       - name: input
         stdin: &final-input
           file: input.txt
+        expected:
+          stdout: "1488414"
   - name: part2
     command: uiua run --no-color part2.ua
     cases:
-      - name: test
+      - name: test1
+        stdin: *test1-input
+        expected:
+          stdout: "80"
+      - name: test2
+        stdin: *test2-input
+        expected:
+          stdout: "436"
+      - name: test3
         stdin: *test3-input
+        expected:
+          stdout: "1206"
+      - name: test4
+        stdin:
+          file: test4.txt
+        expected:
+          stdout: "236"
+      - name: test5
+        stdin:
+          file: test5.txt
+        expected:
+          stdout: "368"
       - name: input
         stdin: *final-input
