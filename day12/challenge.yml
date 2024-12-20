@@ -50,3 +50,5 @@ parts:
           stdout: "368"
       - name: input
         stdin: *final-input
+        expected:
+          stdout: "911750"
