@@ -23,7 +23,13 @@ parts:
     cases:
       - name: test1
         stdin: *test1-input
+        expected:
+          stdout: "45"
       - name: test2
         stdin: *test2-input
+        expected:
+          stdout: "64"
       - name: input
         stdin: *final-input
+        expected:
+          stdout: "479"
