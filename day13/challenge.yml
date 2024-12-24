@@ -20,3 +20,5 @@ parts:
         stdin: *test-input
       - name: input
         stdin: *final-input
+        expected:
+          stdout: "76358113886726"
