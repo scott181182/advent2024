@@ -19,6 +19,10 @@ parts:
     command: uiua run --no-color part2.ua
     cases:
       - name: test
+        arguments: ["11", "7"]
         stdin: *test-input
       - name: input
         stdin: *final-input
+        arguments: ["101", "103"]
+        expected:
+          stdout: "7569"
